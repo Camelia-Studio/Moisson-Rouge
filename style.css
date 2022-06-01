@@ -2075,7 +2075,8 @@ pre code{
     }
 }
 table{
-    background-color:transparent
+    color: #000;
+    background-color:#c7bcad;
 }
 caption{
     padding-top:8px;
