@@ -13,4 +13,4 @@ steps:
     HOST:
       from_secret: shelter-host
   commands:
-    - lftp -c "set cmd:fail-exit yes; set ftp:ssl-allow no; open -u $USERNAME,$PASSWORD $HOST; cd cila.camelia-studio.org/moisson-rouge; mirror -Rpnevvv --parallel=10 --exclude .git/"
+    - lftp -c "set cmd:fail-exit yes; set ftp:ssl-allow no; open -d -u $USERNAME,$PASSWORD $HOST; cd cila.camelia-studio.org/moisson-rouge; mirror -Rpnevvv --parallel=10 --exclude .git/"
