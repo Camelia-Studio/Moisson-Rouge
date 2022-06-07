@@ -196,7 +196,7 @@
             }
         };
 
-        $http.get('https://raw.githubusercontent.com/Mopolo/Eternelle-Moisson/gh-pages/monsters.json').then(function(res) {
+        $http.get('monsters.json').then(function(res) {
             vm.monsters = res.data;
             vm.monsters.forEach(monster => {
                 monster.owned = vm.saveData?.find(el => el[0] === monster.id) ? vm.saveData.find(el => el[0] === monster.id)[1] : 0
