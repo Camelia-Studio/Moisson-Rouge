@@ -6,7 +6,7 @@
     function AppCtrl($http, locker) {
         var vm = this;
 
-        vm.simultaneous = locker.get('simultaneous');
+        vm.simultaneous = locker.get('simultaneous', 1);
         vm.totalSteps = 34;
         vm.sorting = locker.get('sorting', 0);
         vm.saveData = locker.get('save');
