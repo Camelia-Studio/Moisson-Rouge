@@ -3214,10 +3214,10 @@
         "id": 341,
         "name": "Founamboul",
         "zones": [
-            "Boss"
+            "Fabrique de foux d'artifice"
         ],
         "step": 19,
-        "type": "boss"
+        "type": "monster"
     },
     {
         "id": 342,
