@@ -68,7 +68,7 @@
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-3">
-                                Boss : {{ appCtrl.owned('boss') }}/{{ appCtrl.total('boss') }}
+                                Gardiens de donjon : {{ appCtrl.owned('boss') }}/{{ appCtrl.total('boss') }}
 
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="{{ appCtrl.ownedPercentage('boss') }}" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: {{ appCtrl.ownedPercentage('boss') }}%;">
@@ -86,7 +86,7 @@
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-3">
-                                Etapes : {{ appCtrl.completedSteps() }}/{{ appCtrl.totalSteps }}
+                                Étapes : {{ appCtrl.completedSteps() }}/{{ appCtrl.totalSteps }}
 
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="{{ appCtrl.ownedPercentage('archi') }}" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: {{ appCtrl.ownedPercentage('archi') }}%;">
