@@ -3779,9 +3779,9 @@
     },
     {
         "id": 393,
-        "name": "Citassat\u00e9 le Service",
+        "name": "Etoilette la Bouchée",
         "zones": [
-            "For\u00eat mal\u00e9fique"
+            "Rivage Sufokien"
         ],
         "step": 22,
         "type": "archi",
@@ -5648,9 +5648,11 @@
     },
     {
         "id": 572,
-        "name": "Onihylis le Destructeur",
+        "name": "Craquecrac l'Endurant",
         "zones": [
-            "For\u00eat mal\u00e9fique"
+            "Plaines Rocheuses",
+            "Montagne basse des Craqueleurs",
+            "Montagne des Craqueleurs"
         ],
         "step": 31,
         "type": "archi",
@@ -6032,7 +6034,7 @@
         "zones": [
             "Feudala"
         ],
-        "step": 32,
+        "step": 33,
         "type": "archi",
         "base": 268
     },
@@ -6052,7 +6054,7 @@
         "zones": [
             "Vall\u00e9e de la Morh'Kitu"
         ],
-        "step": 33,
+        "step": 32,
         "type": "archi",
         "base": 270
     },
