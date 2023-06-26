@@ -1,0 +1,18 @@
+name: moisson
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    container: finalgene/lftp
+    steps:
+      - run: apk add --no-cache git nodejs
+      - uses: actions/checkout@v3
+      - run: lftp -c "set cmd:fail-exit yes; set ftp:ssl-allow no;set dns:order \"inet inet6\"; open -u $USERNAME,$PASSWORD $HOST; cd cila.camelia-studio.org/moisson-rouge; mirror -Rpnevvv --parallel=10 --exclude .git/"
+    env:
+      USERNAME: ${{ secrets.USERNAME }}
+      PASSWORD: ${{ secrets.PASSWORD }}
+      HOST: ${{ secrets.HOST }}
