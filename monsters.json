@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Souris Grise",
+        "name": "Sousouris Grise",
         "zones": [
             "Cryptes du cimeti\u00e8re"
         ],
@@ -273,7 +273,7 @@
     },
     {
         "id": 27,
-        "name": "Gel\u00e9e Bleue",
+        "name": "Gel\u00e9e Bleuet",
         "zones": [
             "Gelaxi\u00e8me dimension",
             "P\u00e9ninsule des Gel\u00e9es"
@@ -404,7 +404,7 @@
     },
     {
         "id": 40,
-        "name": "Gobelin",
+        "name": "Gobet",
         "zones": [
             "Campement des Bworks",
             "Campement des Gobelins",
@@ -2591,7 +2591,7 @@
     },
     {
         "id": 273,
-        "name": "Malle Outilli\u00e9e",
+        "name": "Malle Outill\u00e9e",
         "zones": [
             "Massif de Cania"
         ],
@@ -2732,7 +2732,7 @@
     },
     {
         "id": 288,
-        "name": "Champ \u00e0 gnon",
+        "name": "Champ \u00e0 gnons",
         "zones": [
             "Caverne des Fungus",
             "Domaine des Fungus"
@@ -2870,7 +2870,7 @@
     },
     {
         "id": 303,
-        "name": "Gel\u00e9e Royale Bleue",
+        "name": "Gel\u00e9e Royale Bleuet",
         "zones": [
             "Boss"
         ],
@@ -3302,7 +3302,7 @@
     },
     {
         "id": 351,
-        "name": "Sourizoto le Collant",
+        "name": "Sousourizoto le Collant",
         "zones": [
             "Cryptes du cimeti\u00e8re"
         ],
@@ -4818,7 +4818,7 @@
     },
     {
         "id": 491,
-        "name": "Chamitant le Dilettante",
+        "name": "Ramitant le Dilettante",
         "zones": [
             "\u00c9gouts de Bonta",
             "\u00c9gouts de Br\u00e2kmar",
@@ -4985,7 +4985,7 @@
     },
     {
         "id": 507,
-        "name": "Ma\u00eetre Onom le R\u00e9gulier",
+        "name": "Ma\u00eetre Champeur le Sabreur",
         "zones": [
             "Routes Rocailleuses"
         ],
@@ -6315,5 +6315,24 @@
         "step": 34,
         "type": "archi",
         "base": 299
+    },
+    {
+        "id": 637,
+        "name": "Noeul",
+        "zones": [
+            "Cryptes du cimeti\u00e8re"
+        ],
+        "step": "4",
+        "type": "monster"
+    },
+    {
+        "id": 638,
+        "name": "Chafer Draugr",
+        "zones": [
+            "Cimeti\u00e8re des H\u00e9ros",
+            "Cimeti\u00e8re des Tortur\u00e9s"
+        ],
+        "step": "9",
+        "type": "monster"
     }
 ]
