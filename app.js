@@ -15,11 +15,8 @@
         vm.displayFinishedSteps = locker.get('displayFinishedSteps', true);
 
         vm.isOwned = function(monster) {
-            if (!vm.saveData || !monster) {
-                return false;
-            }
-
-            return vm.saveData.find(el => el[0] === monster.id) && vm.saveData.find(el => el[0] === monster.id)[1]  >= vm.simultaneous;
+             if (!monster) return false;
+             return monster.owned >= vm.simultaneous;
         };
 
         vm.saveMonster = function(monster, val) {
@@ -50,60 +47,47 @@
         }
 
         vm.owned = function(type, zone, step) {
-            if (!vm.monsters) {
-                return '?';
-            }
+            if (!vm.monsters) return '?';
 
-            return vm.monsters.filter(function(monster) {
-                if (!vm.isOwned(monster)) {
-                    return false;
+            return vm.monsters.reduce(function(total, monster) {
+                if (
+                    (type && monster.type !== type) ||
+                    (zone && monster.zones.indexOf(zone) < 0) ||
+                    (step && monster.step !== step)
+                ) {
+                    return total;
                 }
 
-                if (!type && !zone && !step) {
-                    return true;
-                }
-
-                if (type && monster.type == type) {
-                    return true;
-                }
-
-                if (zone && monster.zones.indexOf(zone) >= 0) {
-                    return true;
-                }
-
-                if (step && monster.step == step) {
-                    return true;
-                }
-
-                return false;
-            }).length;
+                return total + Math.min(monster.owned, vm.simultaneous);
+            }, 0);
         };
 
         vm.ownedPercentage = function(type, zone, step) {
-            return Math.ceil(vm.owned(type, zone, step) * 100 / vm.total(type, zone, step)) || 0;
+            return Math.ceil(vm.owned(type, zone, step) * 100 / vm.total(type, zone, step) / vm.simultaneous) || 0;
         };
 
-        vm.total = function(type, zone, step) {
+         vm.total = function(type, zone, step) {
             if (!vm.monsters) {
                 return '?';
             }
 
-            return vm.monsters.filter(function(monster) {
-                if (type) {
-                    return monster.type == type;
-                }
-
-                if (zone) {
-                    return monster.zones.indexOf(zone) >= 0;
-                }
-
-                if (step) {
-                    return monster.step == step;
-                }
-
+            let base = vm.monsters.filter(function(monster) {
+                if (type && monster.type !== type) return false;
+                if (zone && !monster.zones.includes(zone)) return false;
+                if (step && monster.step !== step) return false;
                 return true;
-            }).length;
+             });
+
+            let count = base.length * vm.simultaneous;
+
+            // On multiplie uniquement s'il n'y a pas de filtre (cas général)
+            if (!type && !zone && !step) {
+                count *= vm.simultaneous;
+            }
+
+            return count;
         };
+
 
         vm.load = function() {
             locker.put('save', vm.loadData.match(/\d+,\d+/gm).map(function(id) {
@@ -178,6 +162,33 @@
         vm.toggleFinishedSteps = function() {
             locker.put('displayFinishedSteps', vm.displayFinishedSteps);
         }
+
+        vm.adjustedTotal = function() {
+            if (!vm.monsters) return '?';
+            return vm.monsters.length * vm.simultaneous;
+        };
+
+        vm.monsterStatus = function(monster) {
+            if (monster.owned >= vm.simultaneous) return 'complete'; // vert
+            if (monster.owned > 0) return 'partial'; // orange
+            return 'none'; // rien
+        };
+
+        vm.stepIsEmptyOrComplete = function(step) {
+            const monstersInStep = vm.steps[step] || [];
+            const owned = monstersInStep.reduce((acc, monster) => acc + monster.owned, 0);
+
+            // Si aucun possédé OU tous possédés à hauteur de simultaneous
+            return owned === 0 || vm.owned(false, false, step) === vm.total(false, false, step);
+        };
+
+        vm.zoneIsComplete = function(zone) {
+            return vm.owned(false, zone) >= vm.total(false, zone);
+        };
+
+        vm.stepIsComplete = function(step) {
+            return vm.owned(false, false, step) >= vm.total(false, false, step);
+        };
 
         vm.resetAll = function() {
             if (confirm('Dernière chance !')) {
