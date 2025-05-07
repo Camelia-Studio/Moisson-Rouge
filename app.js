@@ -63,7 +63,9 @@
         };
 
         vm.ownedPercentage = function(type, zone, step) {
-            return Math.ceil(vm.owned(type, zone, step) * 100 / vm.total(type, zone, step) / vm.simultaneous) || 0;
+            const total = vm.total(type, zone, step);
+            if (typeof total !== 'number' || total === 0) return 0;
+            return Math.ceil(vm.owned(type, zone, step) * 100 / total);
         };
 
          vm.total = function(type, zone, step) {
