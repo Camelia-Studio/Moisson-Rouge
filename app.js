@@ -7,7 +7,7 @@
         var vm = this;
 
         vm.simultaneous = locker.get('simultaneous', 1);
-        vm.totalSteps = 34;
+        vm.totalSteps = 17;
         vm.sorting = locker.get('sorting', 0);
         vm.saveData = locker.get('save');
         vm.displayOwnedMonsters = locker.get('displayOwnedMonsters', true);
@@ -80,14 +80,7 @@
                 return true;
              });
 
-            let count = base.length * vm.simultaneous;
-
-            // On multiplie uniquement s'il n'y a pas de filtre (cas général)
-            if (!type && !zone && !step) {
-                count *= vm.simultaneous;
-            }
-
-            return count;
+            return base.length * vm.simultaneous;
         };
 
 
@@ -108,7 +101,8 @@
 
             vm.monsters.map(function(monster) {
                 if (monster.zones.indexOf(zone) >= 0) {
-                    vm.toggleMonster(monster, newVal);
+                    monster.owned = newVal ? vm.simultaneous : 0;
+                    vm.saveMonster(monster);
                 }
             });
         };
@@ -180,7 +174,6 @@
             const monstersInStep = vm.steps[step] || [];
             const owned = monstersInStep.reduce((acc, monster) => acc + monster.owned, 0);
 
-            // Si aucun possédé OU tous possédés à hauteur de simultaneous
             return owned === 0 || vm.owned(false, false, step) === vm.total(false, false, step);
         };
 
@@ -210,7 +203,8 @@
         };
 
         $http.get('monsters.json').then(function(res) {
-            vm.monsters = res.data;
+            vm.monsters = res.data.filter(monster => monster.type === 'boss' || monster.type === 'archi');
+            
             vm.monsters.forEach(monster => {
                 monster.owned = vm.saveData?.find(el => el[0] === monster.id) ? vm.saveData.find(el => el[0] === monster.id)[1] : 0
             })
