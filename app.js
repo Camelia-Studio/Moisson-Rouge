@@ -210,7 +210,7 @@
             })
 
             vm.zones = {};
-            vm.steps = [];
+            vm.steps = {};
 
             angular.forEach(vm.monsters, function(monster) {
                 angular.forEach(monster.zones, function(zone) {
