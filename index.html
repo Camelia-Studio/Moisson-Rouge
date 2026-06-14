@@ -51,8 +51,7 @@
                     <li><a href="#" data-toggle="modal" data-target="#helpModal">Aide</a></li>
                     <li><a href="#" data-toggle="modal" data-target="#aboutModal">À propos</a></li>
                 </ul>
-            </div><!--/.nav-collapse -->
-        </div>
+            </div></div>
     </nav>
 
     <div class="container">
@@ -61,7 +60,7 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-3">
+                            <div class="col-xs-12 col-sm-4">
                                 Gardiens de donjon : {{ appCtrl.owned('boss') }}/{{ appCtrl.total('boss') }}
 
                                 <div class="progress">
@@ -70,7 +69,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-sm-3">
+                            <div class="col-xs-12 col-sm-4">
                                 Archimonstres : {{ appCtrl.owned('archi') }}/{{ appCtrl.total('archi') }}
 
                                 <div class="progress">
@@ -79,7 +78,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-sm-3">
+                            <div class="col-xs-12 col-sm-4">
                                 Étapes : {{ appCtrl.completedSteps() }}/{{ appCtrl.totalSteps }}
 
                                 <div class="progress">
@@ -116,7 +115,7 @@
                     <div>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" ng-model="appCtrl.displayOwnedMonsters" ng-change="appCtrl.toggleOwnedMonsters()" /> Masquer les âmes possédées
+                                <input type="checkbox" ng-model="appCtrl.displayOwnedMonsters" ng-change="appCtrl.toggleOwnedMonsters()" /> Masquer les éléments possédés
                                 </label>
                             </div>
                       </div>
@@ -303,19 +302,18 @@
                 </div>
                 <div class="modal-body">
                     <p>Cet outil permet de faciliter la gestion de la quête du Dofus Ocre ; <b>L'Éternelle Moisson</b>.</p>
-                    <p>Pour ajouter ou supprimer un monstre il suffit de cliquer sur « + » ou « - » sur sa ligne.<br />
+                    <p>Pour ajouter ou supprimer un gardien ou archimonstre, il suffit de cliquer sur « + » ou « - » sur sa ligne.<br />
                         La sauvegarde se fait automatiquement et il n'y a pas besoin de compte.<br />
                         Les données sont enregistrées localement dans le navigateur. Vous pouvez donc fermer la page et revenir plus tard.</p>
                     <p>Si vous changez de navigateur vous pouvez exporter la sauvegarde pour la charger plus tard.</p>
                     <p>L'outil supporte le fait de compléter plusieurs chasses en simultané. Il suffit de lui indiquer combien il y en a. <br />
                         Vous pouvez en rajouter en cours de route.</p>
-                    <p>Reconnaître les différents types de monstres d'un seul coup d'œil : </p>
+                    <p>Reconnaître les différents types de cibles d'un seul coup d'œil : </p>
                         <ul>
-                            <li>Monstres classiques</li>
                             <li><i class="glyphicon glyphicon-fire ng-scope"></i> Archimonstres</li>
                             <li><i class="glyphicon glyphicon-star ng-scope"></i> Gardiens de donjon</li>
                         </ul>
-                    <p>Si vous trouvez un bogue, avez une idée d'amélioration ou si la liste des monstres n'est pas à jour,
+                    <p>Si vous trouvez un bogue, avez une idée d'amélioration ou si la liste n'est pas à jour,
                         contribuez sur <a href="https://git.crystalyx.net/camelia-studio/Moisson-Rouge" target="_blank">Gitea</a> en faisant
                         une suggestion ou en créant un ticket.</p>
                     <p>Vous pouvez également venir discuter <a href="https://discord.gg/nBuZ9vJ" target="_blank">sur le Discord</a> de <b>Camélia Studio</b>.</p>
@@ -344,8 +342,8 @@
                     <p>Vous pouvez venir discuter autour de ce projet <a href="https://discord.gg/nBuZ9vJ" target="_blank">sur le Discord</a> de notre association ; <b>Camélia Studio</b>.</p>
                     <p>Versions du jeu avec lesquelles l'outil est compatible :</p>
                         <ul>
-                            <li><i class="glyphicon glyphicon-fire ng-scope"></i> Archimonstres : <b>3.5.17.26</b></li>
-                            <li><i class="glyphicon glyphicon-star ng-scope"></i> Gardiens de donjon : <b>3.5.17.26</b></li>
+                            <li><i class="glyphicon glyphicon-fire ng-scope"></i> Archimonstres : <b>3.5+</b></li>
+                            <li><i class="glyphicon glyphicon-star ng-scope"></i> Gardiens de donjon : <b>3.5+</b></li>
                         </ul>
                 </div>
                 <div class="modal-footer">
