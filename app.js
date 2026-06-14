@@ -53,7 +53,7 @@
                 if (
                     (type && monster.type !== type) ||
                     (zone && monster.zones.indexOf(zone) < 0) ||
-                    (step && monster.step !== step)
+                    (step && monster.step !== +step)
                 ) {
                     return total;
                 }
@@ -76,7 +76,7 @@
             let base = vm.monsters.filter(function(monster) {
                 if (type && monster.type !== type) return false;
                 if (zone && !monster.zones.includes(zone)) return false;
-                if (step && monster.step !== step) return false;
+                if (step && monster.step !== +step) return false;
                 return true;
              });
 
