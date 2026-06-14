@@ -1,5 +1,14 @@
 [
     {
+        "id": 299,
+        "name": "Reine Ny'\u00e9e",
+        "zones": [
+            "Boss"
+        ],
+        "step": 1,
+        "type": "boss"
+    },
+    {
         "id": 300,
         "name": "Mob l'\u00e9ponge",
         "zones": [
@@ -3183,7 +3192,7 @@
         "zones": [
             "Feudala"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 268
     },
@@ -3213,7 +3222,7 @@
         "zones": [
             "Cimeti\u00e8re primitif"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 271
     },
@@ -3224,7 +3233,7 @@
             "Feuillage de l'arbre Hakam",
             "Tronc de l'arbre Hakam"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 272
     },
@@ -3234,7 +3243,7 @@
         "zones": [
             "Bois de Litneg"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 277
     },
@@ -3245,7 +3254,7 @@
             "Village de la Canop\u00e9e",
             "Village des Zoths"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 278
     },
@@ -3256,7 +3265,7 @@
             "Feuillage de l'arbre Hakam",
             "Tronc de l'arbre Hakam"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 280
     },
@@ -3267,7 +3276,7 @@
             "Feuillage de l'arbre Hakam",
             "Tronc de l'arbre Hakam"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 281
     },
@@ -3277,7 +3286,7 @@
         "zones": [
             "Tronc de l'arbre Hakam"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 282
     },
@@ -3288,7 +3297,7 @@
             "Village de la Canop\u00e9e",
             "Village des Zoths"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 279
     },
@@ -3298,7 +3307,7 @@
         "zones": [
             "Domaine des Fungus"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 284
     },
@@ -3308,7 +3317,7 @@
         "zones": [
             "Feudala"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 179
     },
@@ -3318,7 +3327,7 @@
         "zones": [
             "Domaine des Fungus"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 285
     },
@@ -3328,7 +3337,7 @@
         "zones": [
             "Caverne des Fungus"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 286
     },
@@ -3338,7 +3347,7 @@
         "zones": [
             "Cimeti\u00e8re de Grobe"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 293
     },
@@ -3348,7 +3357,7 @@
         "zones": [
             "Cimeti\u00e8re de Grobe"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 292
     },
@@ -3358,7 +3367,7 @@
         "zones": [
             "Caverne des Fungus"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 287
     },
@@ -3369,7 +3378,7 @@
             "Caverne des Fungus",
             "Domaine des Fungus"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 288
     },
@@ -3380,7 +3389,7 @@
             "Caverne des Fungus",
             "Domaine des Fungus"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 289
     },
@@ -3390,7 +3399,7 @@
         "zones": [
             "Cimeti\u00e8re de Grobe"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 291
     },
@@ -3400,7 +3409,7 @@
         "zones": [
             "Cimeti\u00e8re de Grobe"
         ],
-        "step": 1,
+        "step": 17,
         "type": "archi",
         "base": 290
     },
