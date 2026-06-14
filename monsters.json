@@ -55,7 +55,7 @@
     },
     {
         "id": 306,
-        "name": "Wabbit Gm",
+        "name": "Choudini",
         "zones": [
             "Boss"
         ],
@@ -91,7 +91,7 @@
     },
     {
         "id": 310,
-        "name": "Mominotor",
+        "name": "Rakoopeur",
         "zones": [
             "Boss"
         ],
@@ -100,11 +100,11 @@
     },
     {
         "id": 311,
-        "name": "D\u00e9minoboule",
+        "name": "Founoroshi",
         "zones": [
             "Boss"
         ],
-        "step": 1,
+        "step": 3,
         "type": "boss"
     },
     {
