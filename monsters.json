@@ -1,463 +1,310 @@
 [
-    {
-        "id": 299,
-        "name": "Reine Ny'\u00e9e",
-        "zones": [
-            "Boss"
-        ],
-        "step": 1,
-        "type": "boss"
-    },
-    {
-        "id": 300,
-        "name": "Mob l'\u00e9ponge",
-        "zones": [
-            "Boss"
-        ],
-        "step": 1,
-        "type": "boss"
-    },
-    {
-        "id": 301,
-        "name": "Bouftou Royal",
-        "zones": [
-            "Boss"
-        ],
-        "step": 1,
-        "type": "boss"
-    },
-    {
-        "id": 302,
-        "name": "Tournesol Affam\u00e9",
-        "zones": [
-            "Boss"
-        ],
-        "step": 1,
-        "type": "boss"
-    },
-    {
-        "id": 303,
-        "name": "Gel\u00e9e Royale Bleuet",
-        "zones": [
-            "Boss"
-        ],
-        "step": 1,
-        "type": "boss"
-    },
-    {
-        "id": 304,
-        "name": "Gel\u00e9e Royale Menthe",
-        "zones": [
-            "Boss"
-        ],
-        "step": 1,
-        "type": "boss"
-    },
-    {
-        "id": 305,
-        "name": "Shin Larve",
-        "zones": [
-            "Boss"
-        ],
-        "step": 1,
-        "type": "boss"
-    },
-    {
-        "id": 306,
-        "name": "Choudini",
-        "zones": [
-            "Boss"
-        ],
-        "step": 1,
-        "type": "boss"
-    },
-    {
-        "id": 307,
-        "name": "Scarabosse Dor\u00e9",
-        "zones": [
-            "Boss"
-        ],
-        "step": 1,
-        "type": "boss"
-    },
-    {
-        "id": 308,
-        "name": "Bworkette",
-        "zones": [
-            "Boss"
-        ],
-        "step": 1,
-        "type": "boss"
-    },
-    {
-        "id": 309,
-        "name": "Dragon Cochon",
-        "zones": [
-            "Boss"
-        ],
-        "step": 1,
-        "type": "boss"
-    },
-    {
-        "id": 310,
-        "name": "Rakoopeur",
-        "zones": [
-            "Boss"
-        ],
-        "step": 1,
-        "type": "boss"
-    },
-    {
-        "id": 311,
-        "name": "Founoroshi",
-        "zones": [
-            "Boss"
-        ],
-        "step": 3,
-        "type": "boss"
-    },
-    {
-        "id": 312,
-        "name": "Tofu Royal",
-        "zones": [
-            "Boss"
-        ],
-        "step": 1,
-        "type": "boss"
-    },
-    {
-        "id": 313,
+       {
+        "id": 165,
         "name": "Blop Coco Royal",
-        "zones": [
-            "Boss"
-        ],
         "step": 1,
         "type": "boss"
-    },
-    {
-        "id": 314,
+      },
+      {
+        "id": 166,
         "name": "Blop Griotte Royal",
-        "zones": [
-            "Boss"
-        ],
         "step": 1,
         "type": "boss"
-    },
-    {
-        "id": 315,
+      },
+      {
+        "id": 167,
         "name": "Blop Indigo Royal",
-        "zones": [
-            "Boss"
-        ],
         "step": 1,
         "type": "boss"
-    },
-    {
-        "id": 316,
+      },
+      {
+        "id": 168,
         "name": "Blop Reinette Royal",
-        "zones": [
-            "Boss"
-        ],
         "step": 1,
         "type": "boss"
-    },
-    {
-        "id": 317,
-        "name": "Rat Noir",
-        "zones": [
-            "Boss"
-        ],
+      },
+      {
+        "id": 182,
+        "name": "Bouftou Royal",
         "step": 1,
         "type": "boss"
-    },
-    {
-        "id": 318,
-        "name": "Rat Blanc",
-        "zones": [
-            "Boss"
-        ],
+      },
+      {
+        "id": 186,
+        "name": "Bworkette",
         "step": 1,
         "type": "boss"
-    },
-    {
-        "id": 319,
+      },
+      {
+        "id": 204,
+        "name": "Choudini",
+        "step": 1,
+        "type": "boss"
+      },
+      {
+        "id": 215,
+        "name": "Dragon Cochon",
+        "step": 1,
+        "type": "boss"
+      },
+      {
+        "id": 226,
+        "name": "Gelée Royale Bleuet",
+        "step": 1,
+        "type": "boss"
+      },
+      {
+        "id": 228,
+        "name": "Gelée Royale Menthe",
+        "step": 1,
+        "type": "boss"
+      },
+      {
+        "id": 249,
         "name": "Minotoror",
-        "zones": [
-            "Boss"
-        ],
         "step": 1,
         "type": "boss"
-    },
-    {
-        "id": 320,
-        "name": "Hell Mina",
-        "zones": [
-            "Boss"
-        ],
+      },
+      {
+        "id": 251,
+        "name": "Mob l'Éponge",
+        "step": 1,
+        "type": "boss"
+      },
+      {
+        "id": 272,
+        "name": "Rakoopeur",
+        "step": 1,
+        "type": "boss"
+      },
+      {
+        "id": 274,
+        "name": "Rat Blanc",
+        "step": 1,
+        "type": "boss"
+      },
+      {
+        "id": 275,
+        "name": "Rat Noir",
+        "step": 1,
+        "type": "boss"
+      },
+      {
+        "id": 276,
+        "name": "Reine Nyée",
+        "step": 1,
+        "type": "boss"
+      },
+      {
+        "id": 286,
+        "name": "Scarabosse Doré",
+        "step": 1,
+        "type": "boss"
+      },
+      {
+        "id": 288,
+        "name": "Shin Larve",
+        "step": 1,
+        "type": "boss"
+      },
+      {
+        "id": 298,
+        "name": "Tofu Royal",
+        "step": 1,
+        "type": "boss"
+      },
+      {
+        "id": 300,
+        "name": "Tournesol Affamé",
+        "step": 1,
+        "type": "boss"
+      },
+      {
+        "id": 139,
+        "name": "Abraknyde Ancestral",
         "step": 2,
         "type": "boss"
-    },
-    {
-        "id": 321,
-        "name": "Tanukou\u00ef San",
-        "zones": [
-            "Boss"
-        ],
+      },
+      {
+        "id": 169,
+        "name": "Blop Multicolore Royal",
         "step": 2,
         "type": "boss"
-    },
-    {
-        "id": 322,
-        "name": "Craqueleur l\u00e9gendaire",
-        "zones": [
-            "Boss"
-        ],
+      },
+      {
+        "id": 207,
+        "name": "Corailleur Magistral",
         "step": 2,
         "type": "boss"
-    },
-    {
-        "id": 323,
-        "name": "Gardienne des \u00e9gouts",
-        "zones": [
-            "Boss"
-        ],
+      },
+      {
+        "id": 211,
+        "name": "Craqueleur Légendaire",
         "step": 2,
         "type": "boss"
-    },
-    {
-        "id": 324,
-        "name": "Gel\u00e9e royale fraise",
-        "zones": [
-            "Boss"
-        ],
+      },
+      {
+        "id": 213,
+        "name": "Damadrya",
         "step": 2,
         "type": "boss"
-    },
-    {
-        "id": 325,
-        "name": "Ma\u00eetre corbac",
-        "zones": [
-            "Boss"
-        ],
+      },
+      {
+        "id": 227,
+        "name": "Gelée Royale Fraise",
         "step": 2,
         "type": "boss"
-    },
-    {
-        "id": 326,
-        "name": "Blop multicolore royal",
-        "zones": [
-            "Boss"
-        ],
+      },
+      {
+        "id": 232,
+        "name": "Gourlo le Terrible",
         "step": 2,
         "type": "boss"
-    },
-    {
-        "id": 327,
-        "name": "Corailleur magistral",
-        "zones": [
-            "Boss"
-        ],
-        "step": 2,
-        "type": "boss"
-    },
-    {
-        "id": 328,
-        "name": "Gourlo le terrible",
-        "zones": [
-            "Boss"
-        ],
-        "step": 2,
-        "type": "boss"
-    },
-    {
-        "id": 329,
-        "name": "Meulou",
-        "zones": [
-            "Boss"
-        ],
-        "step": 2,
-        "type": "boss"
-    },
-    {
-        "id": 330,
-        "name": "Wa wabbit",
-        "zones": [
-            "Boss"
-        ],
-        "step": 2,
-        "type": "boss"
-    },
-    {
-        "id": 331,
-        "name": "Moon",
-        "zones": [
-            "Boss"
-        ],
-        "step": 2,
-        "type": "boss"
-    },
-    {
-        "id": 332,
-        "name": "Koulosse",
-        "zones": [
-            "Boss"
-        ],
-        "step": 2,
-        "type": "boss"
-    },
-    {
-        "id": 333,
-        "name": "Skeunk",
-        "zones": [
-            "Boss"
-        ],
-        "step": 2,
-        "type": "boss"
-    },
-    {
-        "id": 334,
-        "name": "Abraknyde ancestral",
-        "zones": [
-            "Boss"
-        ],
-        "step": 2,
-        "type": "boss"
-    },
-    {
-        "id": 335,
+      },
+      {
+        "id": 235,
         "name": "Hanshi",
-        "zones": [
-            "Boss"
-        ],
         "step": 2,
         "type": "boss"
-    },
-    {
-        "id": 336,
-        "name": "Tynril ahuri",
-        "zones": [
-            "Boss"
-        ],
+      },
+      {
+        "id": 236,
+        "name": "Hell Mina",
         "step": 2,
         "type": "boss"
-    },
-    {
-        "id": 337,
-        "name": "Tynril constern\u00e9",
-        "zones": [
-            "Boss"
-        ],
+      },
+      {
+        "id": 239,
+        "name": "Koulosse",
         "step": 2,
         "type": "boss"
-    },
-    {
-        "id": 338,
-        "name": "Tynril d\u00e9concert\u00e9",
-        "zones": [
-            "Boss"
-        ],
+      },
+      {
+        "id": 243,
+        "name": "Maître Corbac",
         "step": 2,
         "type": "boss"
-    },
-    {
-        "id": 339,
-        "name": "Tynril perfide",
-        "zones": [
-            "Boss"
-        ],
+      },
+      {
+        "id": 248,
+        "name": "Meulou",
         "step": 2,
         "type": "boss"
-    },
-    {
-        "id": 340,
-        "name": "Gel\u00e9e royale citron",
-        "zones": [
-            "Boss"
-        ],
-        "step": 3,
+      },
+      {
+        "id": 252,
+        "name": "Moon",
+        "step": 2,
         "type": "boss"
-    },
-    {
-        "id": 342,
+      },
+      {
+        "id": 289,
+        "name": "Skeunk",
+        "step": 2,
+        "type": "boss"
+      },
+      {
+        "id": 294,
+        "name": "Tanukouï San",
+        "step": 2,
+        "type": "boss"
+      },
+      {
+        "id": 302,
+        "name": "Tynril Ahuri",
+        "step": 2,
+        "type": "boss"
+      },
+      {
+        "id": 303,
+        "name": "Tynril Consterné",
+        "step": 2,
+        "type": "boss"
+      },
+      {
+        "id": 304,
+        "name": "Tynril Déconcerté",
+        "step": 2,
+        "type": "boss"
+      },
+      {
+        "id": 305,
+        "name": "Tynril Perfide",
+        "step": 2,
+        "type": "boss"
+      },
+      {
+        "id": 310,
+        "name": "Wa Wabbit",
+        "step": 2,
+        "type": "boss"
+      },
+      {
+        "id": 187,
         "name": "Bworker",
-        "zones": [
-            "Boss"
-        ],
         "step": 3,
         "type": "boss"
-    },
-    {
-        "id": 343,
-        "name": "Sphincter Cell",
-        "zones": [
-            "Boss"
-        ],
+      },
+      {
+        "id": 201,
+        "name": "Chêne Mou",
         "step": 3,
         "type": "boss"
-    },
-    {
-        "id": 344,
-        "name": "Minotot",
-        "zones": [
-            "Boss"
-        ],
-        "step": 3,
-        "type": "boss"
-    },
-    {
-        "id": 345,
-        "name": "Silf le rasboul majeur",
-        "zones": [
-            "Boss"
-        ],
-        "step": 3,
-        "type": "boss"
-    },
-    {
-        "id": 346,
+      },
+      {
+        "id": 212,
         "name": "Crocabulia",
-        "zones": [
-            "Boss"
-        ],
         "step": 3,
         "type": "boss"
-    },
-    {
-        "id": 347,
+      },
+      {
+        "id": 222,
+        "name": "Founoroshi",
+        "step": 3,
+        "type": "boss"
+      },
+      {
+        "id": 225,
+        "name": "Gelée Royale Citron",
+        "step": 3,
+        "type": "boss"
+      },
+      {
+        "id": 237,
         "name": "Haute Truche",
-        "zones": [
-            "Boss"
-        ],
         "step": 3,
         "type": "boss"
-    },
-    {
-        "id": 348,
-        "name": "Ch\u00eane mou",
-        "zones": [
-            "Boss"
-        ],
-        "step": 3,
-        "type": "boss"
-    },
-    {
-        "id": 349,
-        "name": "Ougah",
-        "zones": [
-            "Boss"
-        ],
-        "step": 3,
-        "type": "boss"
-    },
-    {
-        "id": 350,
+      },
+      {
+        "id": 238,
         "name": "Kimbo",
-        "zones": [
-            "Boss"
-        ],
         "step": 3,
         "type": "boss"
-    },
+      },
+      {
+        "id": 250,
+        "name": "Minotot",
+        "step": 3,
+        "type": "boss"
+      },
+      {
+        "id": 261,
+        "name": "Ougah",
+        "step": 3,
+        "type": "boss"
+      },
+      {
+        "id": 287,
+        "name": "Silf le Rasboul Majeur",
+        "step": 3,
+        "type": "boss"
+      },
+      {
+        "id": 290,
+        "name": "Sphincter Cell",
+        "step": 3,
+        "type": "boss"
+      },
     {
         "id": 351,
         "name": "Sousourizoto le Collant",
