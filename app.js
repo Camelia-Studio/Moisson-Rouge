@@ -78,7 +78,7 @@
                 if (zone && !monster.zones.includes(zone)) return false;
                 if (step && monster.step !== +step) return false;
                 return true;
-             });
+            });
 
             return base.length * vm.simultaneous;
         };
@@ -177,12 +177,29 @@
             return owned === 0 || vm.owned(false, false, step) === vm.total(false, false, step);
         };
 
+        // CORRECTION : Détermination stricte et propre si une zone possède tous ses monstres au max
         vm.zoneIsComplete = function(zone) {
-            return vm.owned(false, zone) >= vm.total(false, zone);
+            if (!vm.zones[zone]) return false;
+            return vm.zones[zone].every(function(monster) {
+                return monster.owned >= vm.simultaneous;
+            });
         };
 
+        // CORRECTION : Détermination stricte et propre si une étape possède tous ses monstres au max
         vm.stepIsComplete = function(step) {
-            return vm.owned(false, false, step) >= vm.total(false, false, step);
+            if (!vm.steps[step]) return false;
+            return vm.steps[step].every(function(monster) {
+                return monster.owned >= vm.simultaneous;
+            });
+        };
+
+        // NOUVELLE FONCTION UTILITAIRE POUR TON HTML
+        // Retourne TRUE si la zone doit être visible à l'écran
+        vm.shouldShowZone = function(zone) {
+            if (!vm.displayFinishedZones && vm.zoneIsComplete(zone)) {
+                return false;
+            }
+            return true;
         };
 
         vm.resetAll = function() {
